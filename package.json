@@ -1,0 +1,19 @@
+{
+  "name": "shop_easy",
+  "version": "1.0.0",
+  "description": "MERN ecommerse platform",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Snehashish7/shop_easy.git"
+  },
+  "author": "Snehashish Ghosh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Snehashish7/shop_easy/issues"
+  },
+  "homepage": "https://github.com/Snehashish7/shop_easy#readme"
+}
