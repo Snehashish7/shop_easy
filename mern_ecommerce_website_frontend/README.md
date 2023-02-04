@@ -38,3 +38,9 @@ If you aren't satisfied with the build tool and configuration choices, you can `
 ## Instead of Bootstrap we use react-bootstrap and Bootswatch as an alternative to CSS-Bootstrap.
 
 In react-Bootstrap(npm i react-bootstrap) the functionalities are same except that the components are react components rather than Bootstrap-CSS components.
+
+## Installed axios file(npm i axios) in frontend which does the following things:
+
+    =>It is a http library which is used to make http requests to our backend('fetch api' could also be used)
+
+## in .env file we can keep confidential information(like API keys,passwords, etc...)
