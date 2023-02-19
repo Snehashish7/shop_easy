@@ -1,9 +1,8 @@
 import React from 'react'
 import { LinkContainer } from 'react-router-bootstrap'// Same as Link of router-dom except 
 //that is is used to wrap boostrap components
-
 import '../index.css'
-import { Navbar, Nav, NavDropdown, Container, Form, FormControl, Button } from 'react-bootstrap'
+import { Navbar, Nav,Container} from 'react-bootstrap'
 
 
 const Header = () => {

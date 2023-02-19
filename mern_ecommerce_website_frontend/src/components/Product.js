@@ -1,11 +1,10 @@
 import React from 'react'
-
 import {Link} from 'react-router-dom' //the <a href = ''></a> will be replaced by <Link to = ''/> to prevent refreshing the
 // page... Since we are making a single page application line flipkart, Facebook
-
 import { Card } from 'react-bootstrap'
 // import products from '../products'
 import Rating from './Rating'
+
 
 const Product = ({ product }) => { /* using destructuring to directly get product instead of taking props as 
 parameter and writing everywhere props.this,props.that.... */

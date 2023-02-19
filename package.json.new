@@ -1,0 +1,39 @@
+{
+  "author": "Snehashish Ghosh",
+  "bugs": {
+    "url": "https://github.com/Snehashish7/shop_easy/issues"
+  },
+  "dependencies": {
+    "bcryptjs": "2.4.3",
+    "colors": "1.4.0",
+    "dotenv": "16.0.3",
+    "express": "4.18.2",
+    "express-async-handler": "1.2.0",
+    "mongoose": "6.9.2",
+    "react-scripts": "5.0.1"
+  },
+  "description": "MERN ecommerse platform",
+  "devDependencies": {
+    "concurrently": "7.6.0",
+    "nodemon": "2.0.20"
+  },
+  "homepage": "https://github.com/Snehashish7/shop_easy#readme",
+  "license": "ISC",
+  "main": "server.js",
+  "name": "shop_easy",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Snehashish7/shop_easy.git"
+  },
+  "scripts": {
+    "client": "npm start --prefix mern_ecommerce_website_frontend",
+    "data:destroy": "node backend/seeder -d",
+    "data:import": "node backend/seeder",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "nodemon backend/server",
+    "start": "node backend/server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "type": "module",
+  "version": "1.0.0"
+}
