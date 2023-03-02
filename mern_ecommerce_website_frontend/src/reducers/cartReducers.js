@@ -4,10 +4,8 @@ export const cartReducer = (state = { cartItems: [] }, action) => {
     switch (action.type) {
         case CART_ADD_ITEM:
             const item = action.payload
-            // search in the state.cartItems array
-            // for the existence of the specific product
-            // that is defined by item (by the action.payload)
-            // if we find a match assign the result to the existItem variable
+            // search in the state.cartItems array for the existence of the specific product
+            // that is defined by item (by the action.payload) if we find a match assign the result to the existItem variable
             const existItem = state.cartItems.find((x) => x.product === item.product);
 
             // if there is already a product matching the item in the state.cartItems array
@@ -32,7 +30,11 @@ export const cartReducer = (state = { cartItems: [] }, action) => {
                 };
             }
         case CART_REMOVE_ITEM:
-            
+            return {
+                ...state,   //state spread in an array
+                cartItems: state.cartItems.filter(x => x.product !== action.payload)
+            }
+
         default:
             return state
     }

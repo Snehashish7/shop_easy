@@ -1,29 +1,28 @@
-import React, {} from 'react'
+import React, { } from 'react'
 import { useNavigate, Link } from 'react-router-dom'
 import { useDispatch, useSelector } from 'react-redux'
 import { Row, Col, ListGroup, Image, Form, Button, Card } from 'react-bootstrap'
 import Message from '../components/Message'
-import { addToCart } from '../actions/cartActions'
+import { addToCart, removeFromCart } from '../actions/cartActions'
 
 const CartScreen = () => {
 
-//   const productId = useParams().id
-//   const location = useLocation()
+  //   const productId = useParams().id
+  //   const location = useLocation()
   const navigate = useNavigate()
-//   const qty = location.search ? Number(location.search.split('=')[1]) : 1
+  //   const qty = location.search ? Number(location.search.split('=')[1]) : 1
   const dispatch = useDispatch()
   const cart = useSelector(state => state.cart)
   const { cartItems } = cart
 
-//   useEffect(() => {
-//     if (productId) {
-//       dispatch(addToCart(productId, qty))
-//     }
-//   }, [dispatch, productId, qty])
+  //   useEffect(() => {
+  //     if (productId) {
+  //       dispatch(addToCart(productId, qty))
+  //     }
+  //   }, [dispatch, productId, qty])
 
   const removeFromCartHnadler = (id) => {
-    // dispatch(removeFromCart(id))
-	console.log('first')
+    dispatch(removeFromCart(id))
   }
 
   const checkoutHandler = () => {
