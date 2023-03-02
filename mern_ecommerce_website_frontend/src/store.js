@@ -1,6 +1,6 @@
-import { combineReducers} from 'redux'
+import { combineReducers } from 'redux'
 import { configureStore } from "@reduxjs/toolkit";
-import {productListReducer,productDetailsReducer} from './reducers/productReducers'
+import { productListReducer, productDetailsReducer } from './reducers/productReducers'
 import { cartReducer } from './reducers/cartReducers';
 import thunk from 'redux-thunk'
 
@@ -12,9 +12,11 @@ const reducer = combineReducers({
   cart: cartReducer
 })
 
-const cartItemsFromStorage = localStorage.getItem('cartItems')?JSON.parse(localStorage.getItem('cartItems')):[]
+const cartItemsFromStorage = localStorage.getItem('cartItems')
+  ? JSON.parse(localStorage.getItem('cartItems'))
+  : []
 const initialState = {
-  cart: {cartItems:cartItemsFromStorage}
+  cart: { cartItems: cartItemsFromStorage, },
 }
 
 const preloadedState = {}
