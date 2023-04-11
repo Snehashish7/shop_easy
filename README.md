@@ -29,5 +29,5 @@ Commit your changes (git commit -m "Add your feature")
 Push to the branch (git push origin feature/your-feature)
 Create a pull request
 
-ShopEasy was created by Snehashish Ghosh as a project for [Course Name/Institution Name].
+ShopEasy was created by Snehashish Ghosh as a project.
 
